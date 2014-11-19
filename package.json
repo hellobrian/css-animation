@@ -1,0 +1,21 @@
+{
+  "name": "css-animations",
+  "version": "0.0.1",
+  "description": "practice with css animations",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "animations"
+  ],
+  "author": "Brian Han",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-plumber": "~0.6.6",
+    "gulp-sass": "~1.1.0",
+    "gulp-webserver": "~0.8.7"
+  }
+}
