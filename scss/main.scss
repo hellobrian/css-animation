@@ -1,12 +1,11 @@
-div {
+.square {
   background: teal;
   width: 200px;
   height: 200px;
   animation: tutsFade 4s 1s infinite linear alternate;
-  -webkit-animation: tutsFade 4s 1s infinite linear alternate;
 }
 
-@-webkit-keyframes tutsFade {
+@keyframes tutsFade {
   0% {
     opacity: 1;
   }
