@@ -2,8 +2,8 @@
   background: teal;
   width: 200px;
   height: 200px;
-  -webkit-animation: tutsFade 4s 1s infinite linear alternate;
-          animation: tutsFade 4s 1s infinite linear alternate; }
+  -webkit-animation: tutsFade 2s 1s infinite linear alternate, tutsRotate 0.5s 1s infinite linear alternate;
+          animation: tutsFade 2s 1s infinite linear alternate, tutsRotate 0.5s 1s infinite linear alternate; }
 
 @-webkit-keyframes tutsFade {
   0% {
@@ -18,3 +18,17 @@
 
   100% {
     opacity: 0; } }
+
+@-webkit-keyframes tutsRotate {
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background: orange;
+    border-radius: 100%; } }
+
+@keyframes tutsRotate {
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background: orange;
+    border-radius: 100%; } }

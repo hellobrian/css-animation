@@ -2,7 +2,8 @@
   background: teal;
   width: 200px;
   height: 200px;
-  animation: tutsFade 4s 1s infinite linear alternate;
+  animation: tutsFade 2s 1s infinite linear alternate,
+             tutsRotate 0.5s 1s infinite linear alternate;
 }
 
 @keyframes tutsFade {
@@ -12,5 +13,13 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes tutsRotate {
+  to {
+    transform: rotate(180deg);
+    background: orange;
+    border-radius: 100%;
   }
 }
