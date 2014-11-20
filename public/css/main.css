@@ -2,33 +2,63 @@
   background: teal;
   width: 200px;
   height: 200px;
-  -webkit-animation: tutsFade 2s 1s infinite linear alternate, tutsRotate 0.5s 1s infinite linear alternate;
-          animation: tutsFade 2s 1s infinite linear alternate, tutsRotate 0.5s 1s infinite linear alternate; }
+  -webkit-animation: tutsFade 2s 1s infinite linear alternate, square-to-circle 2s 1s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate, tutsRotate 2s 1s infinite linear alternate;
+          animation: tutsFade 2s 1s infinite linear alternate, square-to-circle 2s 1s infinite cubic-bezier(1, 0.015, 0.295, 1.225) alternate, tutsRotate 2s 1s infinite linear alternate; }
 
 @-webkit-keyframes tutsFade {
   0% {
     opacity: 1; }
 
   100% {
-    opacity: 0; } }
+    opacity: 0.9; } }
 
 @keyframes tutsFade {
   0% {
     opacity: 1; }
 
   100% {
-    opacity: 0; } }
+    opacity: 0.9; } }
+
+@-webkit-keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0; }
+
+  25% {
+    border-radius: 50% 0 0 0; }
+
+  50% {
+    border-radius: 50% 50% 0 0; }
+
+  75% {
+    border-radius: 50% 50% 50% 0; }
+
+  100% {
+    border-radius: 50%; } }
+
+@keyframes square-to-circle {
+  0% {
+    border-radius: 0 0 0 0; }
+
+  25% {
+    border-radius: 50% 0 0 0; }
+
+  50% {
+    border-radius: 50% 50% 0 0; }
+
+  75% {
+    border-radius: 50% 50% 50% 0; }
+
+  100% {
+    border-radius: 50%; } }
 
 @-webkit-keyframes tutsRotate {
   to {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    background: orange;
-    border-radius: 100%; } }
+    background: coral; } }
 
 @keyframes tutsRotate {
   to {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    background: orange;
-    border-radius: 100%; } }
+    background: coral; } }
